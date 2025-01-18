@@ -36,7 +36,7 @@ export const useTodoStore = create<IStoreState>()(
   persist(
     (set, get) => ({
       searchQuery: "",
-      countryCode: { value: "", label: "" },
+      countryCode: { value: "UA", label: "Ukraine" },
       todos: [],
       monthData: {},
       setSearchQuery: (val) =>
