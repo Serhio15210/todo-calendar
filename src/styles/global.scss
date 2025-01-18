@@ -1,0 +1,122 @@
+@use "variables";
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: variables.$black;
+  background-color: variables.$gray;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a {
+  font-weight: 500;
+  color: variables.$blue;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: variables.$blue;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s;
+  background: variables.$blue;
+  opacity: 0.7;
+  img{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+button:hover {
+  opacity: 1;
+}
+
+
+input,textarea{
+  margin: 0;
+  background: variables.$white;
+  border:none;
+  padding: 5px 10px;
+  resize: vertical;
+  min-height: 40px;
+  color: variables.$black;
+  &:disabled {
+    background: transparent;
+    resize: none;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.searchInput{
+  border: 2px solid variables.$blueLight;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  &:focus{
+    border-color: variables.$blue;
+  }
+}
+.loader{
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  &.search-loading{
+    width: auto;
+    height: auto;
+    right: 10px;
+    top: 10px;
+    background: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: variables.$blue;
+
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

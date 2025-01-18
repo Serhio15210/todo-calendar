@@ -1,0 +1,35 @@
+@use 'variables';
+
+@mixin desktop-min {
+  @media screen and (min-width: #{variables.$screen-bg-min}) {
+    @content;
+  }
+}
+
+@mixin desktop-max {
+  @media screen and (max-width: #{variables.$screen-bg-max}) {
+    @content;
+  }
+}
+
+@mixin mac-max {
+  @media screen and (max-width: #{variables.$screen-mac-max}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{variables.$screen-sm-max}) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: #{variables.$screen-small}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: #{variables.$screen-ipad-pro}) {
+    @content;
+  }
+}

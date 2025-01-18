@@ -1,0 +1,26 @@
+// colors
+$white                  : #FFFFFF;
+$black                  : #242424;
+$blue                   : #646cff;
+$blueLight              : rgba(100, 108, 255, 0.5);
+$gray                   : rgba(255, 255, 255, 0.87);
+$green                  : #2e7d32;
+$greenLight             : #90EE90;
+$yellow                 : #FFD700;
+$red                    : #d32f2f;
+$redLight               : #F08080;
+$grey                   : #cccccc;
+
+// transition
+$fast                   : .2s;
+$normal                 : .5s;
+
+
+// breakpoints
+$screen-bg-max          : 1919px;
+$screen-md-max          : 1600px;
+$screen-mac-max         : 1300px;
+$screen-sm-max          : 426px;
+$screen-small           : 374px;
+$screen-ipad-pro        : 1023px;
+$screen-bg-min          : 1920px;
