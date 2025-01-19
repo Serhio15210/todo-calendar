@@ -59,6 +59,9 @@ const DroppableCell = ({
           <div className="headerRow">
             <span>
               {isWeek ? new Date(day.date).toDateString().split(" ")[0] : ""}{" "}
+              <span className={"dayMobile"}>
+                {new Date(day.date).toDateString().split(" ")[0]}
+              </span>{" "}
               {day.date.split("-").at(-1)} {day.holiday || ""}
             </span>
             <button className={"addBtn"} onClick={() => setAddingDay(day.date)}>

@@ -118,6 +118,9 @@
   @include media-queries.mac-max {
     grid-template-columns: repeat(7, 250px);
   }
+  @include media-queries.mobile {
+    display: none;
+  }
 }
 
 .weekHeader {
@@ -155,6 +158,9 @@
     justify-content: space-between;
     width: 100%;
     padding-right: 15px;
+    .dayMobile{
+      display: none;
+    }
   }
   .taskRow{
     display: flex;
@@ -218,7 +224,13 @@
     -moz-box-shadow: inset 2px 2px 30px -4px rgba(0, 0, 0, 0.39);
     box-shadow: inset 2px 2px 30px -4px rgba(0, 0, 0, 0.39);
   }
-
+  @include media-queries.mobile {
+    .headerRow{
+      .dayMobile{
+        display: inline-block;
+      }
+    }
+  }
 }
 
 

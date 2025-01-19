@@ -20,6 +20,8 @@ const SelectRegion = () => {
       options={selectData}
       onChange={setCountryCode as (val: SingleValue<CountryCode>) => void}
       value={countryCode}
+      defaultValue={{ value: "UA", label: "Ukraine" }}
+      placeholder={"Select region"}
       className={"selectRegion"}
     />
   );
